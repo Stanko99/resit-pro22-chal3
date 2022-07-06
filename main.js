@@ -1,14 +1,9 @@
+
 // api key: appid=f4d54c4c55da307dc69dfa51e113fe05
 // https://api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}
 //2d: api is http://api.geonames.org/timezoneJSON?
 
-function httpGet(api101) // GET to aquire the api
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", api101, false);
-    xmlHttp.send(null);
-    return xmlHttp.responseText;
-}
+
 
 function showWeather() {
     var landing = document.getElementById("dropDown");
@@ -77,3 +72,9 @@ function showWeather() {
 
 }
 
+function httpGet(api101)  {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", api101, false);
+    xmlHttp.send(null);
+    return xmlHttp.responseText;
+}
